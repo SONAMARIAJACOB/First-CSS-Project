@@ -1,0 +1,179 @@
+nav{
+  display: block;
+}
+
+/*########## Custom Styles ################*/
+nav{
+  width:100%;
+  margin: 0;
+}
+nav ul{
+  background-color: #eee;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+ul.topnav li{
+  list-style: none;
+  float: left;
+}
+ul.topnav li a{
+  display: block;
+  text-decoration: none;
+  min-height: 16px;
+  text-align: center;
+  padding: 14px;
+  text-transform: uppercase;
+  color: #666;
+}
+ul.topnav li a:hover{
+  background-color: #0080ff;
+  color: #fff;
+}
+
+ul.topnav li.dropdownIcon{
+  display: none;
+}
+.container{
+  width: 100%;
+  margin: auto;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+.row{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.row::after{
+  display: table;
+  clear: both;
+  content: "";
+}
+*{
+  box-sizing: border-box;
+}
+div.leftSide-col{
+  margin-left: 15%;
+}
+.col-4 {
+  border-right: 6px solid black;
+  height: 500px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/*############Apply gradient color###############*/
+#section-1-gradient{
+  background-color: rgba(255,0,0,0); /*background-image: url(fallback.jpg);*/
+           /* For Chrome (v 10-25) and Safari(v 5.1-6)  */
+           background: -webkit-linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+           /* For Firefox(v 3.6-15)  */
+           background: -moz-linear-gradient( to right, rgba(255,0,0,0), rgba(255,0,0,1));           /* For Opera(v 11.5) */
+           background-image: -o-linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+           /* For IE 10+ */
+           background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1))
+}
+
+/*############## Section 2 Navbar####################*/
+.dropbtn {
+  border-radius: 10%;
+  background-color: #ff6347;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  margin-left: 15%;
+}
+
+.dropdown {
+
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+button{
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #0069ff;
+  padding: 7px;
+  display: block;
+  text-align: left;
+  border-radius: 7px;
+}
+button.submitGender{
+  display: block;
+  margin: inherit;
+  margin-left: 10%;
+}
+.mapouter{
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 600px;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none!important;
+  height: 500px;
+  width: 600px;
+}
+/*############# Mobile ##################*/
+@media screen and (max-width: 650px) {
+  ul.topnav li:not(:nth-child(1)) {
+    display: none;
+}
+ul.topnav li.dropdownIcon{
+  display: block;
+  float: right;
+}
+ul.topnav.reponsive li.dropdownIcon{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+ul.topnav.responsive {
+  position: relative;
+}
+ul.topnav.responsive li{
+  display: inline;
+  float: none;
+}
+ul.topnav.responsive li a{
+display: block;
+text-align: left;
+}
+}

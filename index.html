@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav>
+      <ul class="topnav" id="dropdownClick">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+      </ul>
+    </nav>
+
+<div class="container">
+  <div class="row" id="section-1-gradient">
+    <div class="col-4">
+      <h1>Welcome! Please Login</h1>
+      <form>
+        <div class="leftSide-col">
+          <h2>Username</h2>
+          <input class="inputbox" name="username" type="text" placeholder="Username">
+          <h2>Password</h2>
+          <input class="inputbox" name="password" type="text" placeholder="Password">
+        </div>
+      </form>
+    </div>
+    <div class="col-4">
+      <div class="dropdown">
+        <header>
+          <h2>Select your country</h2>
+        </header>
+  <button class="dropbtn">Country</button>
+  <div class="dropdown-content">
+    <a href="#">India</a>
+    <a href="#">USA</a>
+    <a href="#">China</a>
+    <a href="#">Pakistan</a>
+    <a href="#">Russia</a>
+    <a href="#">Australia</a>
+    <a href="#">Canada</a>
+    <a href="#">Brazil</a>
+    <a href="#">Argentina</a>
+    <a href="#">Algeria</a>
+  </div>
+</div>
+<header>
+  <h2>Select your gender</h2>
+</header>
+<form>
+  <input type="radio" name="gender" value="male">
+  <label>Male</label>
+  <input type="radio" name="gender" value="female">
+  <label>Female</label>
+  <br><br>
+  <button type="button" class="submitGender">Submit</button>
+</form>
+    </div>
+    <div class="col-4">
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+          <a href="https://123movies-to.org"></a><br>
+          <a href="https://www.embedgooglemap.net">google maps website embed</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      function dropdownMenu() {
+        var x = document.getElementById("dropdownClick");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+          /*change topnav to topnav.responsive*/
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>
